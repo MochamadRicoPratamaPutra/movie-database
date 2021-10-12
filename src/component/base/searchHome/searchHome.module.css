@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 30px;
+}
+.searchBox {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgb(160, 160, 160);
+  outline: none;
+}
+.buttonSearch {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.buttonSearch img {
+  height: 30px;
+}
+.searchCategory {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+.category {
+  border-radius: 10px;
+  width: 300px;
+  outline: none;
+}
+.close {
+  background-color: rgb(255, 65, 65);
+}
+.open {
+  background-color: rgb(160, 160, 160);
+}
+.categoryButton {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.searchButton{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  border-radius: 10px;
+}
+.none {
+  display: none;
+}

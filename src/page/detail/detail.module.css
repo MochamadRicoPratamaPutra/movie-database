@@ -1,0 +1,14 @@
+.container {
+  margin: 10px;
+}
+.content {
+  display: flex;
+  gap: 30px;
+}
+.content img {
+  width: 180px;
+  height: 270px;
+}
+.type{
+  text-transform: capitalize;
+}

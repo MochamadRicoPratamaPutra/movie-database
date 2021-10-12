@@ -1,0 +1,8 @@
+.container {
+  padding: 30px 150px;
+}
+.resultSearch{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px
+}

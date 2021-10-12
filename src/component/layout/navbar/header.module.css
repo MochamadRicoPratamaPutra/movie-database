@@ -1,0 +1,11 @@
+.container {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.logo {
+  height: 70px;
+}
