@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Style from './searchHome.module.css';
 import { useHistory } from 'react-router';
+import Swal from 'sweetalert2';
 
 const SearchHome = () => {
   const [search, setSearch] = useState(null);
@@ -13,7 +14,12 @@ const SearchHome = () => {
     if (search !== null) {
       history.push(`/search?keyword=${search}&year=${year}&type=${type}`);
     } else {
-      alert('You need to input what movie you want to search at the search bar');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You need to input what movie you want to search at the search bar',
+      })
+      
     }
   };
   const handleCategory = (e) => {
@@ -35,7 +41,7 @@ const SearchHome = () => {
       <div className={category ? Style.searchCategory : Style.none}>
         <select name="type" id="type" className={Style.category} onChange={(e) => setType(e.target.value)}>
           <option disabled selected value>
-            Add item to?
+            Type?
           </option>
           <option value="movie">Movie</option>
           <option value="series">Series</option>

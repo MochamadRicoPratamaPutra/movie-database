@@ -4,7 +4,7 @@ import SearchHome from '../../component/base/searchHome'
 const Home = () => {
   return (
     <div className={Style.container}>
-      <p>Search any movie that you want to watch</p>
+      <h1 className={Style.title}>What movie you want to search?</h1>
       <SearchHome/>
     </div>
   )
