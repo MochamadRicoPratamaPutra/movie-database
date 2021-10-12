@@ -8,6 +8,16 @@
   <a href="https://github.com/MochamadRicoPratamaPutra/movie-database/pulls">Request Feature</a>
 </p>
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+* [Test Case](#test-case)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
