@@ -4,7 +4,6 @@ import Card from '../../component/base/card';
 import Style from './search.module.css';
 import { useLocation } from 'react-router';
 import qs from 'query-string';
-import SearchHome from '../../component/base/searchHome';
 
 const Search = () => {
   const [result, setResult] = useState([]);
@@ -26,21 +25,15 @@ const Search = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [keyword, year, type, pageNumber]);
+  }, [keyword, type, year, pageNumber]);
   window.onscroll = () => {
     if (window.innerHeight + document.documentElement.scrollTop + 10 >= document.documentElement.offsetHeight) {
       if(total > 10 * pageNumber && current === pageNumber)
       setPageNumber((prevPageNumber) => prevPageNumber + 1)
     }
   }
-  console.log(result);
-  console.log(pageNumber);
-  console.log(total)
-  console.log(current)
   return (
     <div className={Style.container}>
-      <SearchHome default={keyword} />
-      <br />
       <p className="f-20">Did you search for {keyword}?</p>
       <br />
       <div className={Style.resultSearch}>

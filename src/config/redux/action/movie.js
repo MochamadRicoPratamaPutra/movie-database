@@ -1,11 +1,14 @@
-import api from '../../axios/api';
+import axios from "axios";
 export const getMovie = (id) => (dispatch) => {
-  api
-    .get(`&i=${id}`)
+  return new Promise((resolve, reject) => {
+    axios.get(`${process.env.REACT_APP_API_URL}&i=${id}&plot=full`)
     .then((res) => {
-      dispatch({ type: 'REQ_GET_PRODUCT', payload: res });
+      dispatch({ type: 'REQ_GET_PRODUCT', payload: res.data });
+      resolve('Success')
     })
     .catch((err) => {
-      console.log(err);
+      dispatch({ type: 'ERROR', payload: err.response.data.error.message });
+      reject('Error')
     });
+  })
 };

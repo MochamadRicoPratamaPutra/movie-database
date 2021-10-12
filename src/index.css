@@ -22,3 +22,9 @@ p {
 .f-30 {
   font-size: 30px;
 }
+.f-bold {
+  font-weight: bold;
+}
+.fc-white {
+  color: white;
+}

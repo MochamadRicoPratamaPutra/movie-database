@@ -39,7 +39,7 @@ const SearchHome = () => {
           </option>
           <option value="movie">Movie</option>
           <option value="series">Series</option>
-          <option value="episode">Episode</option>
+          <option value="game">Game</option>
         </select>
         <input type="number" className={Style.searchBox} name="year" placeholder="year" onChange={(e) => setYear(e.target.value)}/>
       </div>

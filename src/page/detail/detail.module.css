@@ -9,6 +9,17 @@
   width: 180px;
   height: 270px;
 }
-.type{
+.type {
   text-transform: capitalize;
+}
+.information {
+  display: flex;
+  gap: 60px;
+}
+.title {
+  background: rgb(59, 59, 59);
+}
+.error {
+  min-height: calc(100vh - 200px);
+  padding: 30px 150px;
 }

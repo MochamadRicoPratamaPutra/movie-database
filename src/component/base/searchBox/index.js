@@ -8,7 +8,7 @@ const SearchBox = ({searchDisplay}) => {
   const history = useHistory()
   const handleSubmit = (e) => {
     e.preventDefault()
-    history.push(`/search?keyword=${search}`)
+    history.push(`/search?keyword=${search}&year=&type=`)
   }
   return (
     <form className={searchDisplay ? Style.container : Style.none } onSubmit={handleSubmit}>
